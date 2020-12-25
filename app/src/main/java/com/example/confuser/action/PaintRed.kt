@@ -7,6 +7,6 @@ class PaintRed : Action {
     }
 
     override fun paint() {
-        //TODO
+
     }
 }

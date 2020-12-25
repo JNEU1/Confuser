@@ -2,10 +2,12 @@ package com.example.confuser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    val doRandomThingsService: DoRandomThingsService = TODO()
+    @Inject
+    lateinit var doRandomThingsService: DoRandomActionsService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
